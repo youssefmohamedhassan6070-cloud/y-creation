@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Y CREATION | Digital Solutions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images\logo.png.jpeg">
+<link rel="icon" type="image/png" sizes="16x16" href="images\logo.png.jpeg">
+
+<meta name="description" content="Y CREATION provides modern web design, development, and digital solutions for future-ready businesses.">
+
+<meta charset="UTF-8">
+<title>Y CREATION | Start</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.start-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-box {
+    text-align: center;
+    padding: 40px;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+}
+.start-box button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="start-container">
+    <div class="start-box">
+        <h2>Welcome to Y CREATION</h2>
+        <p>Choose how you want to enter</p>
+
+        <button onclick="enterUser()">Enter as User</button>
+        <button onclick="enterEditor()">Enter as Editor</button>
+    </div>
+</div>
+
+<script>
+function enterUser() {
+    // User عادي
+    localStorage.removeItem("editorMode");
+    window.location.href = "index.html";
+}
+
+function enterEditor() {
+    // نروح على صفحة اللوجين الموجودة أصلًا
+    window.location.href = "login.html"; 
+    // ← غيّر الاسم لو صفحة اللوجين اسمها مختلف
+}
+</script>
+
+</body>
+</html>

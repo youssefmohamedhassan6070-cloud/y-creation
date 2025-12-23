@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    
+
+<title>Y CREATION | Digital Solutions</title>
+<meta name="description" content="Y CREATION provides modern web design, development, and digital solutions for future-ready businesses.">
+<link rel="icon" type="image/png" sizes="32x32" href="images\logo.png.jpeg">
+<link rel="icon" type="image/png" sizes="16x16" href="images\logo.png.jpeg">
+
+<title>Y CREATION | Home</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+
+<nav>
+<h1>Y CREATION</h1>
+<div class="logo-pro">
+    <img src="images\logo.png.jpeg" alt="Y CREATION Logo" height="35px" width="35px">
+    
+</div>
+
+
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2 id="homeTitle">Build Your Digital Future</h2>
+       <p id="homeDesc">Professional digital solutions for modern businesses.</p>
+
+    </div>
+    <div class="hero-image">
+    <img src="images\logo.png.jpeg" alt="" width="300px" height="300px">
+</div>
+
+</section>
+<button id="switchBtn" onclick="switchMode()">
+    Switch Mode
+</button>
+
+
+<footer>
+<p>© 2025 Y CREATION</p>
+</footer>
+<div id="editorPanel" style="display:none">
+
+    <h3>Editor Panel</h3>
+
+    <input id="editTitle" placeholder="Edit Home Title">
+    <textarea id="editDesc" placeholder="Edit Home Description"></textarea>
+
+    <button onclick="saveText()">Save Changes</button>
+    <button onclick="logout()">Exit Editor</button>
+<button id="dashboardBtn" onclick="goDashboard()" style="display:none">
+    Dashboard
+</button>
+
+
+
+</div>
+<script src="js\editor.js"></script>
+
+
+</body>
+</html>
